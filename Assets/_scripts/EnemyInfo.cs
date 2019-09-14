@@ -22,6 +22,7 @@ public enum ActionType
     Rot90,
     Rot180,
     Jump,
+    Attack,
 }
 
 public enum PropertyType
