@@ -94,7 +94,7 @@ public class EnemyInfoInspector : Editor
     void drawElementCallback0(Rect rect, int index, bool isActive, bool isFocused)
     {
         Rect R_1 = new Rect(rect.x, rect.y + 2, rect.width, EditorGUIUtility.singleLineHeight);//+2是为了居中
-        enemyInfo.actionTypeList[index] = (ActionType)EditorGUI.EnumPopup(R_1, enemyInfo.actionTypeList[index]);
+        enemyInfo.actionTypeList[index] = (AdvancedActionType)EditorGUI.EnumPopup(R_1, enemyInfo.actionTypeList[index]);
 
     }
     void drawElementCallback1(Rect rect, int index, bool isActive, bool isFocused)

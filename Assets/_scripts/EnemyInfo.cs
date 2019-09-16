@@ -4,10 +4,12 @@ using UnityEngine;
 [System.Serializable]//必须要写，不然创建出来的不可复制、不可保存
 public class EnemyInfo : ScriptableObject
 {
-    public List<ActionType> actionTypeList;
+    public List<BaseActionType> baseActionTypeList;
+    public List<IntermediateActionType> intermediateActionTypeList;
+    public List<AdvancedActionType> advancedaActionTypeList;
     public List<Property> propertyList;
-    public LifeState lifeState;
-
+    public LifeState lifeState;  
+  
 }
 public enum LifeState
 {
@@ -16,13 +18,24 @@ public enum LifeState
     Hold,//定住
 
 }
-public enum ActionType
+public enum BaseActionType
 {
     Move,
     Rot90,
     Rot180,
     Jump,
 }
+public enum IntermediateActionType
+{   
+    Jump,
+    LookAt,
+}
+public enum AdvancedActionType
+{  
+    Attack,    
+    RunAway,
+}
+
 
 public enum PropertyType
 {
