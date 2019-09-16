@@ -6,7 +6,7 @@ public class EnemyInfo : ScriptableObject
 {
     public List<BaseActionType> baseActionTypeList;
     public List<IntermediateActionType> intermediateActionTypeList;
-    public List<AdvancedActionType> advancedaActionTypeList;
+    public List<AdvancedActionType> advancedActionTypeList;
     public List<Property> propertyList;
     public LifeState lifeState;  
   

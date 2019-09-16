@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bba91c933ee250046b1e19a32bb76ea4, type: 3}
   m_Name: Enemy01
   m_EditorClassIdentifier: 
-  actionTypeList: 0400000001000000
+  baseActionTypeList: 
+  intermediateActionTypeList: 
+  advancedActionTypeList: 
   propertyList:
   - propertyType: 0
     weight: 50
